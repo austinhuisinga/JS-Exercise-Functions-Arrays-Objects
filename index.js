@@ -41,10 +41,11 @@ function addNumbers(num1, num2) {
 */
 function makePersonObject(id, name, email) {
   let obj = {
-    id: "id",
-    name: "name",
-    email: "email"
-  }
+    id: id,
+    name: name,
+    email: email
+  };
+  return obj;
 };
 
 /**
