@@ -232,7 +232,13 @@ function getModelYears(inventory) {
  * in the same order as they appear in the original inventory.
 */
 function getOlderCars(inventory, maxyear) {
-  
+  let newCars = [];
+  for (let i = 0; i < inventory.length; i++) {
+    if(inventory[i].car_year <= maxyear) {
+      newCars.push(inventory[i]);
+    }
+  }
+  return newCars;
 }
 
 /**
